@@ -1,11 +1,11 @@
 # Alexander Shumskiy
 
-## Address:
+## *Address:*
 
-__MyAddress:__        			Republic of Belarus/Minsk Voblast/Marjina Horka
-__Email:__            			"sanya.shumskiy.95@mail.ru"
-__myPhoneNumber:__     			+375333439650(MTS)
-__Skype:__							shumskiyalex
+__MyAddress:__ Republic of Belarus/Minsk Voblast/Marjina Horka \
+__Email:__"sanya.shumskiy.95@mail.ru" \
+__myPhoneNumber:__ +375333439650(MTS) \
+__Skype:__ shumskiyalex
 
 ## Education:
 
