@@ -5,7 +5,7 @@
 __MyAddress:__ Republic of Belarus/Minsk Voblast/Marjina Horka \
 __Email:__ "sanya.shumskiy.95@mail.ru" \
 __myPhoneNumber:__ +375333439650 (MTS) \
-__Skype:__  shumskiyalex 
+__Skype:__ shumskiyalex 
 ## Education:
 
 2013-2016 __BELARUSIAN STATE ACADEMY OF COMMUNICATIONS__ \
