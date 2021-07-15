@@ -87,7 +87,7 @@ h6 {
 	font-size: inherit;
 	font-weight: inherit;
 }
-/*MAIN*/
+/*BODY*/
 body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	background-color: #e8e8e8;
@@ -102,6 +102,7 @@ h2 {
 	font-weight: 600;
 	margin: 0px 0px 20px 0px;
 }
+/*WRAPPER*/
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -120,8 +121,8 @@ h2 {
 }
 /*HEADER*/
 .header {
-	border: 1px solid #000;
 	display: flex;
+	margin: 0px 0px 50px 0px;
 }
 .header__info {
 	flex: 1 1 auto;
@@ -131,15 +132,56 @@ h2 {
 	text-align: center;
 	margin: 0px 0px 40px 0px;
 }
-
-.header__address {
-}
 .address-list {
 	padding: 0px 0px 10px 0px;
 }
-
 .header__image img {
 	max-width: 200px;
 }
+/*MAIN*/
+.main {
+	padding: 10px 0px;
+}
+.main__info {
+	display: flex;
+	margin: 0px -20px;
+}
+.main__column {
+	flex: 0 1 50%;
+	padding: 0px 20px;
+	justify-content: center;
+	align-items: center;
+}
+.main__info-item {
+	padding: 0px 0px 20px 0px;
+}
+.main__info-item p {
+	padding: 0px 0px 10px 0px;
+	line-height: 20px;
+}
+.main__about {
+	line-height: 20px;
+}
+/*FOOTER*/
 .footer {
+	max-height: 200px;
+}
+.footer__info {
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+.footer__autor {
+	padding: 10px;
+}
+.footer__autor p {
+	margin: 0px 0px 30px 0px;
+}
+.footer__course {
+	padding: 10px;
+}
+.course__logo {
+	margin: 0 auto;
+	height: 50px;
+	width: 100px;
 }
