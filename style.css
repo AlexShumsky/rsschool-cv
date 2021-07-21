@@ -185,3 +185,9 @@ h2 {
 	height: 50px;
 	width: 100px;
 }
+.main__code {
+	padding: 20px 0px;
+}
+.main__code textarea {
+	margin: 10px 0px;
+}
