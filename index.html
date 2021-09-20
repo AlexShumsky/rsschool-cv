@@ -18,6 +18,18 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="content">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="burger__menu">
+					<li class="menu__item"><a href="#contacts"> Contacts</a></li>
+					<li class="menu__item"><a href="#interests"> Interests</a></li>
+					<li class="menu__item"><a href="#about"> About</a></li>
+					<li class="menu__item"><a href="#technolgies"> Technologies</a></li>
+					<li class="menu__item"><a href="#projects"> Projects</a></li>
+				</ul>
 				<div class="columns">
 					<aside class="column__left">
 						<div class="section__container">
@@ -30,7 +42,7 @@
 										<span>
 											<img src="image/logo/contact-book.png" alt="contact">
 										</span>
-										<h2>Contact me</h2>
+										<h2 id="contacts">Contact me</h2>
 									</div>
 									<ul class="item__ul">
 										<li class="address-list phone"><b>Mobile: </b><a
@@ -74,7 +86,7 @@
 										<span>
 											<img src="image/logo/interests/puzzle.png" alt="Social networks">
 										</span>
-										<h2>Interests</h2>
+										<h2 id="interests">Interests</h2>
 									</div>
 									<div class="cv__interests">
 										<div class="interests__container">
@@ -121,7 +133,7 @@
 					<main class="column__right">
 						<div class="section__container">
 							<header class="header name">
-								<h1><span>Alexander</span> Shumskiy</h1>
+								<h1 id="about"><span>Alexander</span> Shumskiy</h1>
 								<span class="header__name">Web developer</span>
 							</header>
 							<div class="main">
@@ -149,7 +161,7 @@
 										<p><i>Telecommunication</i> specialist </p>
 									</div>
 									<div class="main__info-item">
-										<h3 class="name name-s">Technologies:</h3>
+										<h3 id="technolgies" class="name name-s">Technologies:</h3>
 										<h5>HTML5 <span><span class="htm"></span></span></h5>
 										<h5>CSS <span><span class="css"></span></span></h5>
 										<h5>JS <span><span class="js"></span></span></h5>
@@ -182,7 +194,7 @@
 										</pre>
 										</div>
 										<div class="main__info-item">
-											<h3 class="name name-s">My projects:</h3>
+											<h3 id="projects" class="name name-s">My projects:</h3>
 											<div class="projects">
 												<div class="project">
 													<h4>PhotoFilter</h4>
@@ -232,6 +244,15 @@
 			</footer>
 		</div>
 	</div>
+	<script>
+		let menu = document.querySelector('.burger__menu');
+		let burger = document.querySelector('.burger');
+		burger.addEventListener('click', () => {
+			menu.classList.toggle('active');
+		})
+		let item = document.querySelector('.burger__menu');
+		item.addEventListener('click', () => menu.classList.remove('active'))
+	</script>
 </body>
 
 </html>
