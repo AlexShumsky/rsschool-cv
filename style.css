@@ -383,6 +383,10 @@ a:hover:after {
 	content: "";
 	display: none;
 }
+.project a:after {
+	content: "";
+	display: none;
+}
 .project__img {
 	display: block;
 	max-height: 400px;
