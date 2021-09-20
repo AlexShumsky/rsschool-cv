@@ -91,7 +91,9 @@ h6 {
 	font-weight: inherit;
 }
 /*BODY*/
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Source Serif Pro";
 	font-size: 14px;
@@ -128,6 +130,23 @@ h5 span {
 	width: 80%;
 	background-color: #e0cbdb;
 	margin: 10px 0px;
+}
+.burger {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.burger__menu {
+	display: none;
+}
+.burger span {
+	display: none;
 }
 .css {
 	width: 60%;
@@ -178,6 +197,7 @@ a:hover:after {
 	padding: 20px 20px;
 }
 .container {
+	position: relative;
 	min-height: 100vh;
 	width: 70%;
 	margin: 0 auto;
@@ -489,6 +509,38 @@ a:hover:after {
 	}
 	.container {
 		width: 100%;
+	}
+	.burger span {
+		display: inline-block;
+		width: 90%;
+		height: 5px;
+		background: #9a7b88;
+	}
+	.burger__menu {
+		height: 100vh;
+		position: fixed;
+		top: -100%;
+		left: 30%;
+		background: #9a7b88;
+		opacity: 0.9;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		transition: all 0.5s ease 0s;
+	}
+	.active {
+		top: 0;
+		left: 30%;
+		transition: all 0.5s ease 0s;
+	}
+	.menu__item {
+		border: 1px solid #000;
+		height: 10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 2px;
 	}
 	.item__ul {
 		margin: 20px 0px 0px 0px;
