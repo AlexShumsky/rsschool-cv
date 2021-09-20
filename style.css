@@ -371,6 +371,28 @@ a:hover:after {
 .code {
 	width: 80%;
 }
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.project {
+	flex: 1 1 30%;
+	padding: 20px 10px;
+}
+.project a:hover:after {
+	content: "";
+	display: none;
+}
+.project__img {
+	display: block;
+	max-height: 400px;
+	max-width: 400px;
+	height: 100%;
+}
+.project__img img {
+	height: 90%;
+	width: 90%;
+}
 /*FOOTER*/
 .footer {
 	max-height: 200px;
@@ -385,8 +407,18 @@ a:hover:after {
 .footer__autor {
 	padding: 10px;
 }
+.github {
+	background: url("image/logo/github-sign.png") left no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: 20px;
+	padding: 0px 0px 0px 30px;
+	height: 25px;
+}
 .footer__autor p {
-	margin: 0px 0px 30px 0px;
+	text-align: center;
+	margin: 30px 0px 0px 0px;
 }
 .footer__course {
 	padding: 10px;
@@ -503,6 +535,23 @@ a:hover:after {
 	.main__info-item {
 		padding: 5px 0px;
 	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0 1 100%;
+		padding: 10px 5px;
+	}
+	.project__img {
+		display: block;
+		max-height: 400px;
+		max-width: 400px;
+		height: 100%;
+		width: 100%;
+	}
+
 	h5 span {
 		width: 100%;
 	}
