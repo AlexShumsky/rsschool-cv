@@ -519,7 +519,7 @@ a:hover:after {
 	.burger__menu {
 		height: 100vh;
 		position: fixed;
-		top: -100%;
+		top: -200%;
 		left: 30%;
 		background: #9a7b88;
 		opacity: 0.9;
