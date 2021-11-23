@@ -516,25 +516,36 @@ a:hover:after {
 		height: 5px;
 		background: #9a7b88;
 	}
+
 	.burger__menu {
-		height: 100vh;
+		display: flex;
+		justify-content: center;
 		position: fixed;
-		top: -200%;
-		left: 20%;
-		background: #9a7b88;
+		height: 100vh;
+		width: 100%;
+		top: 0%;
+		left: -200%;
+		transition: all 0.5s ease 0s;
+		background: #444;
 		opacity: 0.9;
-		width: 60%;
+	}
+	.active {
+		z-index: 1;
+		top: 0%;
+		left: 0%;
+		transition: all 0.5s ease 0s;
+	}
+	.burger__list {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		transition: all 0.5s ease 0s;
-		z-index: 0;
+		height: 100vh;
+		background: #9a7b88;
+		width: 60%;
 	}
-	.active {
-		z-index: 100;
-		top: 0;
-		left: 20%;
-		transition: all 0.5s ease 0s;
+	.burger__list li a {
+		color: white;
+		font-size: 24px;
 	}
 	.menu__item {
 		border: 1px solid #000;

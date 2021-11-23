@@ -23,13 +23,16 @@
 					<span></span>
 					<span></span>
 				</div>
-				<ul class="burger__menu">
-					<li class="menu__item"><a href="#contacts"> Contacts</a></li>
-					<li class="menu__item"><a href="#interests"> Interests</a></li>
-					<li class="menu__item"><a href="#about"> About</a></li>
-					<li class="menu__item"><a href="#technolgies"> Technologies</a></li>
-					<li class="menu__item"><a href="#projects"> Projects</a></li>
-				</ul>
+				<div class="burger__menu">
+					<ul class="burger__list">
+						<li class="menu__item"><a href="#contacts"> Contacts</a></li>
+						<li class="menu__item"><a href="#interests"> Interests</a></li>
+						<li class="menu__item"><a href="#about"> About</a></li>
+						<li class="menu__item"><a href="#technolgies"> Technologies</a></li>
+						<li class="menu__item"><a href="#projects"> Projects</a></li>
+					</ul>
+					<div class="burger__fon"></div>
+				</div>
 				<div class="columns">
 					<aside class="column__left">
 						<div class="section__container">
@@ -247,11 +250,17 @@
 	<script>
 		let menu = document.querySelector('.burger__menu');
 		let burger = document.querySelector('.burger');
+
 		burger.addEventListener('click', () => {
 			menu.classList.toggle('active');
 		})
 		let item = document.querySelector('.burger__menu');
-		item.addEventListener('click', () => menu.classList.remove('active'))
+		item.addEventListener('click', removeActive)
+		window.addEventListener('scroll', removeActive)
+
+		function removeActive() {
+			menu.classList.remove('active')
+		}
 	</script>
 </body>
 
