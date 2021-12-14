@@ -149,7 +149,7 @@ h5 span {
 	display: none;
 }
 .css {
-	width: 60%;
+	width: 50%;
 	background-color: #877f88;
 }
 .git {
@@ -157,11 +157,11 @@ h5 span {
 	background-color: #877f88;
 }
 .js {
-	width: 50%;
+	width: 60%;
 	background-color: #877f88;
 }
 .htm {
-	width: 70%;
+	width: 55%;
 	background-color: #877f88;
 }
 a {
