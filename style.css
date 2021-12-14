@@ -418,6 +418,13 @@ a:hover:after {
 	height: 90%;
 	width: 90%;
 }
+
+.video__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 /*FOOTER*/
 .footer {
 	max-height: 200px;
@@ -548,12 +555,14 @@ a:hover:after {
 		font-size: 24px;
 	}
 	.menu__item {
-		border: 1px solid #000;
+		border-top: 2px solid #80485f;
+		border-bottom: 2px solid #80485f;
 		height: 10%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		letter-spacing: 2px;
+		background: rgb(0, 0, 0, 0.2);
 	}
 	.item__ul {
 		margin: 20px 0px 0px 0px;
