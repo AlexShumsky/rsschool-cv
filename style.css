@@ -425,6 +425,9 @@ a:hover:after {
 	justify-content: center;
 	align-items: center;
 }
+.video__container a::after {
+	display: none;
+}
 /*FOOTER*/
 .footer {
 	max-height: 200px;
