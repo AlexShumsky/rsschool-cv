@@ -131,21 +131,7 @@ h5 span {
 	background-color: #e0cbdb;
 	margin: 10px 0px;
 }
-.burger {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	height: 30px;
-	width: 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
 .burger__menu {
-	display: none;
-}
-.burger span {
 	display: none;
 }
 .css {
@@ -520,13 +506,55 @@ a:hover:after {
 	.container {
 		width: 100%;
 	}
-	.burger span {
-		display: inline-block;
-		width: 90%;
-		height: 5px;
-		background: #9a7b88;
+	.content {
+		position: relative;
 	}
+	.burger__container {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		width: 60px;
+		height: 60px;
 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		cursor: pointer;
+	}
+	.burger {
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: #000;
+		transition: all 0.3s ease 0s;
+	}
+	.burger::before,
+	.burger::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: #000;
+		transition: all 0.3s ease 0s;
+	}
+	.burger::before {
+		transform: translateY(-20px);
+	}
+	.burger::after {
+		transform: translateY(20px);
+	}
+	.burger__container.burger-active .burger {
+		transform: translateX(-25px);
+		background: transparent;
+	}
+	.burger__container.burger-active .burger::before {
+		transform: rotate(45deg) translate(20px, -20px);
+	}
+	.burger__container.burger-active .burger::after {
+		transform: rotate(-45deg) translate(20px, 20px);
+	}
 	.burger__menu {
 		display: flex;
 		justify-content: center;

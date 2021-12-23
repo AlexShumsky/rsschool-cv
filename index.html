@@ -18,10 +18,8 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="content">
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<div class="burger__container">
+					<div class="burger"></div>
 				</div>
 				<div class="burger__menu">
 					<ul class="burger__list">
@@ -285,17 +283,19 @@
 	</div>
 	<script>
 		let menu = document.querySelector('.burger__menu');
-		let burger = document.querySelector('.burger');
+		let burger = document.querySelector('.burger__container');
 
 		burger.addEventListener('click', () => {
 			menu.classList.toggle('active');
+			burger.classList.toggle('burger-active');
 		})
-		let item = document.querySelector('.burger__menu');
-		item.addEventListener('click', removeActive)
-		window.addEventListener('scroll', removeActive)
+
+		menu.addEventListener('click', removeActive);
+		window.addEventListener('scroll', removeActive);
 
 		function removeActive() {
-			menu.classList.remove('active')
+			menu.classList.remove('active');
+			burger.classList.remove('burger-active');
 		}
 	</script>
 </body>
