@@ -134,19 +134,28 @@ h5 {
 .burger__menu {
 	display: none;
 }
-.main__info-item .css {
-	width: 50%;
-	background-color: #877f88;
-}
-.main__info-item .git {
-	width: 50%;
-	background-color: #877f88;
-}
+
 .main__info-item .js {
+	width: 70%;
+	background-color: #877f88;
+}
+.main__info-item .webpack {
+	width: 50%;
+	background-color: #877f88;
+}
+.main__info-item .scss {
+	width: 60%;
+	background-color: #877f88;
+}
+.main__info-item .css {
 	width: 60%;
 	background-color: #877f88;
 }
 .main__info-item .html {
+	width: 65%;
+	background-color: #877f88;
+}
+.main__info-item .git {
 	width: 55%;
 	background-color: #877f88;
 }
